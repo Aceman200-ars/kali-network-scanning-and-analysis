@@ -27,7 +27,7 @@ nmap --top-ports 1000 -T4 -oA scans/nmap/initial 10.0.2.15
 # Service/version detection + default scripts + OS guess
 nmap -sC -sV -O -Pn -T4 -oA scans/nmap/deep 10.0.2.15
 
-## 2) Wireshark — Packet Analysis & Protocol Verification
+# 2) Wireshark — Packet Analysis & Protocol Verification
 
 **Why it matters:**  
 Provides visibility into live or captured traffic. Used to verify service behavior at the packet level and to confirm Nmap findings by observing DNS, TCP, and HTTP flows directly.
